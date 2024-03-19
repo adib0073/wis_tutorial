@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #8924ab;
+  --primary-color-darker: #6f168d;
+  --primary-color-darkest: #60107a;
+
+  --neutral-color: #e8e7e7;
+
+  --white: #f7f7f8;
+  --black: #1e1e1f;
+
+  --shadow-normal: rgba(100, 100, 111, 0.1) 0px 4px 8px 0px;
+  --shadow-large: rgba(100, 100, 111, 0.2) 0px 7px 19px 0px;
+  --border-radius: 8px;
+  --spacing-normal: 8px;
+  --spacing-large: 12px;
+}
+
+
+body {
+  padding: 2rem;
+  background-color: var(--neutral-color) !important;
+  color: var(--black);
+}
+
+.header h1 {
+  font-size: 24px;
+  font-family: pacifico, sans-serif;
+  margin: 24px;
+}
+
+.buttonrow {
+  margin-top: var(--spacing-large);
+  display: flex;
+}
+
+.row > div {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  transition: all .4s;
+}
+
+.row > div:hover {
+  box-shadow: var(--shadow-large);
+  border-radius: var(--border-radius);
+}
+
+.btn {
+  border-radius: var(--border-radius) !important;
+  padding: var(--spacing-normal) var(--spacing-large) !important;
+}
+.btn:hover {
+  box-shadow: var(--shadow-normal) !important;
+}
+.btn:active {
+  transform: scale(0.97) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color-darker) !important;
+}
+
+.btn-primary:active {
+  background-color: var(--primary-color-darkest) !important;
+}
+
+.form-control {
+  border-radius: var(--border-radius) !important;
+}
+
+.card {
+  padding: 0 !important;
+}
+
+.card-img-top {
+  border-radius: var(--border-radius) var(--border-radius) 0 0!important;
+}
